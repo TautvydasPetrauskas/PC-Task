@@ -1,0 +1,27 @@
+<div class="row mt-5">
+  <div class="col-md-6 mx-auto">
+    <table class="table table-bordered mt-5">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>User ID</th>
+        <th>Title</th>
+        <th>Body</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let obj of res">
+        <td>
+          {{obj.id | json}}
+        </td>
+        <td> {{obj.userId | json}}</td>
+        <td> {{obj.title | json}}</td>
+        <td> {{obj.body | json}}</td>
+      </tr>
+      </tbody>
+    </table>
+    <a [routerLink]="['/']">
+      <button type="submit" class="btn btn-primary col-md-4 ">Back</button>
+    </a>
+  </div>
+</div>

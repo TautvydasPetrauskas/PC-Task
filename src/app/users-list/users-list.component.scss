@@ -1,0 +1,15 @@
+a.title {
+  color: black;
+
+  &:hover {
+    color: darkgray;
+  }
+}
+
+a.id {
+  color: grey;
+
+  &:hover {
+    color: black;
+  }
+}

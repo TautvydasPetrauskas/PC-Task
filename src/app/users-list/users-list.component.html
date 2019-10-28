@@ -1,0 +1,29 @@
+<div class="container mt-5">
+  <h2>Users
+    <a class="float-right" [routerLink]="['/user/add']">
+      <button type="button" class="btn btn-primary">Add</button>
+    </a>
+  </h2>
+  <table class="table table-bordered mt-5">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data; let i = index;">
+      <td>
+        <a class="nav-link id" [routerLink]="['/show/', item.id]">
+          {{item.id}}
+        </a>
+      </td>
+      <td>
+        <a class="nav-link title" [routerLink]="['/show/', item.id]">
+          {{item.title}}
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

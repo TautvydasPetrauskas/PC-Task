@@ -1,0 +1,15 @@
+a.title {
+  color: black;
+}
+a.title:hover {
+  color: darkgray;
+}
+
+a.id {
+  color: grey;
+}
+a.id:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=users-list.component.css.map */
